@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+  <meta
+    name='keywords'
+    content='charleston,charleston tech,charleston tech slack,code of conduct'
+  >
+  <meta
+    name='description'
+    content='Charleston Tech - Code of Conduct'
+  >
+
+  <meta property='og:type' content='website' />
+  <meta property='og:title' content='{{page.title}}' />
+  <meta property='og:image' content='{{site.parenturl}}static/og.png' />
+  <meta
+    property='og:description'
+    content='Charleston Tech - Code of Conduct'
+  />
+
+  <link rel="shortcut icon" href="{{site.parenturl}}static/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300,700,400|Open+Sans:400,700|Merriweather:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='{{site.parenturl}}static/style.css' type='text/css'>
+  <link rel='stylesheet' href='css/site.css' type='text/css'>
+
+  <!-- TODO: Add analytics --!>
+</head>
+<body>
+  <article id='article' class='page-{{page.title|downcase}}'>
+    <div class="container">
+      <div class="page-header">
+        <h1>
+          <a href="{{ site.url }}">{{ site.title }}</a>
+          {% if page.version %}<span class="version">{{page.version}}</span>{% endif %}
+        </h1>
+      </div>
+
+      {{ content }}
+
+    </div>
+  </article>
+
+</body>
+</html>
