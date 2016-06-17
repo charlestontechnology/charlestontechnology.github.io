@@ -1,4 +1,5 @@
 ---
+name: Bill Mote
 github: androidfu
 twitter: billmote
 linkedin: bmote
