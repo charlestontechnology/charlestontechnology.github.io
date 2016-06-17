@@ -5,4 +5,5 @@ group :test do
   gem 'rake'
   gem 'octokit'
   gem 'minitest'
+  gem 'html-proofer'
 end
