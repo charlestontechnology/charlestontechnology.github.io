@@ -1,6 +1,6 @@
 # Site settings
 title: CHS Tech Community
-email: bill.mote@gmail.com
+email: contact@charlestontechnology.com
 description: We are a community-built directory of tech resources in Charleston, SC
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://charlestontechnology.com/" # the base hostname & protocol for your site
