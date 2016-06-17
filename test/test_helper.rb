@@ -8,25 +8,30 @@ module ChsTech
     # All the people that we need to check. These are just the people entries
     # that have changes on this branch.
     #
-    # Returns a Hash of people data
+    # Returns a Hash of names and people data
     def people
       return @people if defined? @people
 
-      @people = {}
+      @people = Hash[people_files.map do |filename|
+        person_name = File.basename(filename).match(/\A(.*).md\Z/)[1]
+        begin
+          [person_name, YAML.load_file(filename).to_h]
+        rescue NoMethodError
+          [person_name, {}]
+        end
+      end]
+    end
+
+    # The people files that have been modified in this branch
+    #
+    # Returns an Array of people files
+    def people_files
+      return @people_files if defined? @people_files
       diffable_files = `git diff -z --name-only --diff-filter=ACMRTUXB origin/master`.split("\0")
 
-      diffable_files.select do |filename|
-        if File.extname(filename) == ".md" && File.dirname(filename).match(/\A_people\Z/)
-          person_name = File.basename(filename).match(/\A(.*).md\Z/)[1]
-          begin
-            @people[person_name] = YAML.load_file(filename).to_h
-          rescue NoMethodError
-            @people[person_name] = {}
-          end
-        end
+      @people_files = diffable_files.select do |filename|
+        File.extname(filename) == ".md" && File.dirname(filename).match(/\A_people\Z/)
       end
-
-      @people
     end
 
     # Octokit client for use in tests
