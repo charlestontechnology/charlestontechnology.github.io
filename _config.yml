@@ -1,14 +1,9 @@
 # Site settings
 title: CHS Tech Community
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: bill.mote@gmail.com
+description: We are a community-built directory of tech resources in Charleston, SC
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://charlestontechnology.com/" # the base hostname & protocol for your site
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, script, test, vendor]
 
 # Build settings
