@@ -1,0 +1,35 @@
+
+.person-img {
+  border-radius: 6px;
+  width: 180px;
+  height:180px;
+}
+
+.person-social {
+  display: inline-block;
+  height: 18px;
+  margin-left: 5px;
+}
+
+.person-social a {
+  width: 29px;
+  overflow: hidden;
+  float: left;
+  border-bottom: 0px;
+}
+
+.person-social i {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.person-github {
+  margin-bottom:30px; 
+}
+
+.person-github section {
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 5px;
+  background-color:white;
+}
