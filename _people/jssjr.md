@@ -1,4 +1,5 @@
 ---
+name: Scott Sanders
 github: jssjr
 twitter: scott_sanders
 linkedin: scottsandersjr
