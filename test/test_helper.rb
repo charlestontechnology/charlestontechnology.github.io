@@ -38,7 +38,14 @@ module ChsTech
     #
     # Returns a Octokit::Client Object
     def octokit
-      @octokit ||= Octokit::Client.new
+      @octokit ||= if ENV.include?("GH_TOKEN") && ENV.include?("GH_LOGIN")
+                     Octokit::Client.new(
+                       :login        => ENV["GH_LOGIN"],
+                       :access_token => ENV["GH_TOKEN"],
+                     )
+                   else
+                     Octokit::Client.new
+                   end
     end
   end
 end
