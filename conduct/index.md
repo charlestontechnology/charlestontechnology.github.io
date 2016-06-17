@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+title:  "Code of Conduct"
 version: v1.0
 ---
 

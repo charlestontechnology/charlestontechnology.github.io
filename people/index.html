@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+		
+		<!-- Main -->
+			<article id="main">
+
+				<header class="special container">
+					<span class="icon fa-users"></span>
+					<h3>You must be the change you wish to see in the world.</h3>
+				</header>
+					
+				<!-- Two -->
+					<section class="wrapper style1 container special">
+						<div class="row">
+							{% for person in site.people  %}
+							{{ person }}
+							<div class="3u person-github" data-github="{{ person.social.github }}" id="person-{{ person.social.github }}">
+								<section>
+									<header>
+									<h4 class="person-name"></h4>
+									<img class="person-img" alt="{{ person.name }}" src="/assets/blank.png">
+									</header>
+									<footer>
+										<div class="person-social">
+  											{% if person.social.github %}
+  											<a title="{{ person.social.github }} on Github" href="https://github.com/{{ person.social.github }}"><i class="fa fa-github-square"></i></a>
+  											{% endif %}
+
+  											{% if person.social.bitbucket %}
+  											<a title="{{ person.social.bitbucket }} on Bitbucket" href="https://bitbucket.com/{{ person.social.bitbucket }}/"><i class="fa fa-bitbucket-square"></i></a>
+  											{% endif %}
+
+  											{% if person.social.twitter %}
+  											<a title="{{ person.social.twitter }} on Twitter" href="https://twitter.com/{{ person.social.twitter }}"><i class="fa fa-twitter-square"></i></a>
+  											{% endif %}
+
+  											{% if person.social.linkedin %}
+  											<a title="{{ person.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ person.social.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
+  											{% endif %}
+
+</div>
+									</footer>
+								</section>
+							
+							</div>
+							{% endfor %}
+						</div>
+					</section>
+			</article>
