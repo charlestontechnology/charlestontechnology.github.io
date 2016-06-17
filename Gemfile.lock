@@ -124,6 +124,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  minitest
+  octokit
   rake
 
 BUNDLED WITH
