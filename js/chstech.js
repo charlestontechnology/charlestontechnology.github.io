@@ -13,10 +13,13 @@ $( document ).ready(
                 	$(this).attr('src', $(this).attr('data-src')).removeClass('lazy');
         	});
 
+		// this results in rate-limiting from github API
+		/*
 		$('.person-github').each(function(){
 			var api_url = '//api.github.com/users/' + $(this).attr('data-github');
 			$.getJSON(api_url, {}, load_github_profile);
 		});
+		*/
 
 	}
 );

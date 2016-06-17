@@ -23,11 +23,11 @@
   margin-right: 5px;
 }
 
-.person {
+.person-github {
   margin-bottom:30px; 
 }
 
-.person section {
+.person-github section {
   border: 1px solid #efefef;
   border-radius: 6px;
   padding: 5px;
