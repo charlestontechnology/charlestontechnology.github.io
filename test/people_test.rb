@@ -13,7 +13,7 @@ class PeopleTest < ChsTech::Test
     people.each do |name, info|
       github_username = info.fetch("github", false)
       if github_username
-        assert_kind_of Sawyer::Resource, octokit.user(github_username)
+        assert_kind_of Sawyer::Resource, octokit.user(github_username), "#{github_username} is not a real GitHub account"
       end
     end
   end
