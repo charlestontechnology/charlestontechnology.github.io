@@ -20,6 +20,7 @@ Start by following the [contributing](#contributing) guide, then take a look in 
 
 ```
 ---
+name: Robert Colantuoni
 github: rgc
 twitter: rgc
 linkedin: robcolantuoni
