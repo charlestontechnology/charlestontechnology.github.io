@@ -34,7 +34,11 @@ layout: default
 									</header>
 									<footer>
 										<div class="person-social">
-  											{% if person.github %}
+											{% if person.website %}
+ 											<a title="{{ company.website }}" href="{{ company.website }}"><i class="fa fa-external-link-square"></i></a>
+											{% endif %}
+
+											{% if person.github %}
   											<a title="{{ person.github }} on Github" href="https://github.com/{{ person.github }}"><i class="fa fa-github-square"></i></a>
   											{% endif %}
 
