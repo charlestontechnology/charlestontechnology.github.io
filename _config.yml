@@ -3,7 +3,7 @@ title: CHS Tech Community
 email: contact@charlestontechnology.com
 description: We are a community-built directory of tech resources in Charleston, SC
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://charlestontechnology.com/" # the base hostname & protocol for your site
+url: "http://charlestontechnology.com" # the base hostname & protocol for your site
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, script, test, vendor]
 
 # Build settings
@@ -14,3 +14,5 @@ collections:
     # enable per-user pages? not yet!
     #output: true
     #permalink: /people/:path/
+  companies:
+
