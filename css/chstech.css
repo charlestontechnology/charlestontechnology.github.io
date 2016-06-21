@@ -24,7 +24,7 @@
 }
 
 .person-github {
-  margin-bottom:30px; 
+  margin-bottom:30px;
 }
 
 .person-github section {
@@ -32,4 +32,14 @@
   border-radius: 6px;
   padding: 5px;
   background-color:white;
+}
+
+/** Code of Conduct Bullet Styles **/
+
+ul {
+  list-style-type: disc;
+}
+
+ul > li {
+  margin-left: 2.4em;
 }
