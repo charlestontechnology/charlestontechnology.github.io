@@ -24,7 +24,7 @@
 }
 
 .person-github {
-  margin-bottom:30px; 
+  margin-bottom:30px;
 }
 
 .person-github section {
@@ -65,3 +65,13 @@
 	font-size: 12px;
 }
 
+=======
+/** Code of Conduct Bullet Styles **/
+
+ul {
+  list-style-type: disc;
+}
+
+ul > li {
+  margin-left: 2.4em;
+}
