@@ -3,7 +3,7 @@ require_relative "test_helper"
 class PeopleTest < ChsTech::Test
   # Ensure the people profile YAML documents can be coerced into a hash
   def test_profile_is_valid_yaml
-    people_files.each do |filename|
+    collection_files(:people).each do |filename|
       assert_respond_to YAML.load_file(filename), :to_h, "#{filename} isn't valid people data"
     end
   end
