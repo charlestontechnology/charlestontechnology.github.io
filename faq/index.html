@@ -11,9 +11,57 @@ layout: default
 		<!-- Main -->
 			<article id="main">
 
-				<header class="special container">
-					<span class="icon fa-question-circle"></span>
-					<h3>Sometimes questions are more important than answers.</h3>
-				</header>
-					
+			<header class="special container">
+				<span class="icon fa-question-circle"></span>
+				<h3>Sometimes questions are more important than answers.</h3>
+			</header>
+<!--
+		        <section class="wrapper style1 container">
+				<div class="row">
+					<div class="12u faq" id="faq-tags">
+					<section>
+					{% assign tag_array = "" | split: "," %}
+					{% for faq in site.faq  %}
+						{% for tag in (faq.tags | split: ' ')  %}
+							{% unless tag_array contains tag %}
+								{% assign tag_array = tag_array | push: tag %}
+							{% endunless %}
+						{% endfor %}
+					{% endfor %}
+
+					{{ tag_array | join: ", " }}
+					</section>
+					</div>
+				</div>
+			</section>
+-->
+			<!-- Two -->
+			<section class="wrapper style1 container faq">
+				<div class="row">
+				{% for faq in site.faq  %}
+					<div class="12u faq" id="faq-{{ faq.id }}">
+						<section>
+							<header>
+								<div class="faq-question">
+									{{ faq.question }}
+								</div>
+								<!--
+								<div class="faq-tags">
+									<a href="#">moving</a>,
+									<a href="#">remote-work</a>,
+									<a href="#">flame-war</a>
+								</div>
+								-->
+							</header>
+							<footer>
+								<div class="faq-answer">
+									{{ faq.content }}
+								</div>
+							</footer>
+						</section>
+						
+					</div>
+				{% endfor %}
+				</div>
+			</section>
 			</article>
