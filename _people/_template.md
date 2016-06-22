@@ -5,6 +5,6 @@ github: username
 #optional - remove if not using
 twitter: username
 linkedin: username
-company: Hireology
-title: Senior Manager of User Experience
+company: Company Name
+title: Your Title
 ---
