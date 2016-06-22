@@ -34,7 +34,11 @@ layout: default
 									</header>
 									<footer>
 										<div class="person-social">
-  											{% if person.github %}
+											{% if person.website %}
+ 											<a title="{{ company.website }}" href="{{ company.website }}"><i class="fa fa-external-link-square"></i></a>
+											{% endif %}
+
+											{% if person.github %}
   											<a title="{{ person.github }} on Github" href="https://github.com/{{ person.github }}"><i class="fa fa-github-square"></i></a>
   											{% endif %}
 
@@ -48,6 +52,10 @@ layout: default
 
   											{% if person.linkedin %}
   											<a title="{{ person.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ person.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
+											{% endif %}
+
+  											{% if person.call_sign %}
+  											<a title="{{ person.call_sign }} on QRZ" href="https://www.qrz.com/db/{{ person.call_sign }}"><i class="fa fa-rss-square"></i></a>
   											{% endif %}
 
 </div>

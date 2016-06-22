@@ -20,6 +20,7 @@ Start by following the [contributing](#contributing) guide, then take a look in 
 
 ```
 ---
+name: Robert Colantuoni
 github: rgc
 twitter: rgc
 linkedin: robcolantuoni
@@ -29,3 +30,15 @@ title: Advanced Services Architect
 ```
 
 Add this file to your branch and send a PR so we can merge the change and add you to the list of amazing professionals and enthusiats in the Charleston tech community. :sunglasses:
+
+For companies, we have the same process with slightly different fields, with the files located in _companies:
+
+```
+---
+name: BoomTown!
+github: BoomTownROI
+twitter: BoomTownROI
+website: http://boomtownroi.com/
+---
+```
+
