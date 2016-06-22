@@ -34,6 +34,37 @@
   background-color:white;
 }
 
+.faq section {
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 5px;
+  background-color:white;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 4px;
+}
+
+.faq-question::before {
+  /* content: "Q: "; */
+}
+
+.faq-answer {
+  margin: 4px;
+}
+
+.faq-answer::before {
+  /* content: "A: "; */
+}
+
+.faq-tags {
+	text-align: right;
+	font-size: 12px;
+}
+
 /** Code of Conduct Bullet Styles **/
 
 ul {
