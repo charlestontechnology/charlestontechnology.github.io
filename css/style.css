@@ -606,6 +606,18 @@
 			padding: 4em;
 		}
 
+    .wrapper.style5 {
+      background: white;
+      color: inherit;
+      padding: 2em;
+    }
+
+    .wrapper.style5 h4 {
+      border-bottom: 2px dotted #ccc;
+      padding-bottom: 0.8em;
+      font-weight: 400;
+    }
+
 /* Header */
 	@-moz-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 	@-webkit-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
