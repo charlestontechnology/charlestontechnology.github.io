@@ -7,7 +7,7 @@ http://charlestontechnology.com/
 So you want to contibute? Awesome! :sparkles: Here is the recommended workflow:
 
 1. Fork the repo, and clone it locally.
-1. Run `./script/bootstrap` to prepare your local develoment environment.
+1. Run `./script/bootstrap` to prepare your local development environment.
 1. Create a new branch for your contribution.
 1. Add [tests](https://github.com/charlestontechnology/charlestontechnology.github.io/tree/master/test) if needed. (Run them with `script/test`.)
 1. Push to your fork and submit a PR!
