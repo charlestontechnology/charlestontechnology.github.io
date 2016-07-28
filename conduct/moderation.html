@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "Moderation"
+version: v1.0
+---
+
+<p>
+Thank you for your help creating such an open and self-moderating community. That said, there are times when community members might need moderation of a potentially heated discussion. Conflict happens in every large community and there needs to be a published process for dispute resolution between users.
+</p>
+<p>
+The <a href="slack://channel?id=C1VV05U75&team=T06EX6Z28">#moderators</a> room has been created to help address this issue (because all problems can be solved by creating more channels!). Moderators should be involved as a last resort and the community should heed the <a href="../conduct">Code of Conduct</a> regarding civility and debate. Ultimately, moderators will not make a decision about who is “correct” in a particular situation, but are available to enforce the civility of discussion.
+</p>
+<p>
+The Code of Conduct has been updated to include a moderation process and a list of moderator responsibilities. The moderators are reaching out to various tech groups for broader insight and advice on how to approach heated situations with both integrity and sensitivity.
+</p>
+
+
+<h2>Moderators</h3>
+
+<p>
+Based on their involvement in this Slack and recommendations from the community, the following people were asked to act as moderators:
+</p>                
+
+<section class="wrapper style1 special">
+    <div class="row">
+        {% for person in site.people  %}
+            {% if person.moderator %}
+                {% include person.html %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<h2>Common Types of Issues</h2>
+
+<h4><b>Argumentum ad hominem</b></h4>
+<p>
+Attacking the character, motive, or other attribute of the person making the argument, or persons associated with the argument, rather than attacking the substance of the argument itself.
+</p>
+<p>
+For Example:
+</p>
+<p>
+User1: Personally, I prefer to use regular expressions for parsing HTML when web scraping.</br>
+User2: What kind of crap developer does that?  So stupid!  Too many edge cases!</br>
+</p>
+<p>
+An alternate reaction by User2 would have been more constructive:
+</p>
+<p>
+User1: Personally, I prefer to use regular expressions for parsing HTML when web scraping.</br>
+User2: It might seem the easier route initially, but you’ll save yourself time and headaches by using a proper parsing library. Let me send you some resources I’ve used when tackling the same issue.</br>
+</p>
+
+<h4><b>Trolling</b></h4>
+
+<p>Making a deliberately offensive or provocative online posting with the aim of upsetting someone or eliciting an angry response from them.</p>
+<p>
+For Example:
+</p>
+<p>
+User1: They should ban Perl in 49 states and send all the Perl developers to Alaska!</br>
+User2: Actually, Alaska is pretty nice this time of year...</br>
+</p>
+<p>
+An alternate method for User1 to portray their viewpoint:
+</p>
+<p>
+User1: I've tried developing in Perl and I can't understand why they have all the sigils - not my cup of tea!</br>
+User2: Yeah, there is an interesting interview with Larry Wall where he discusses the sigils and his thought process. Let me dig up the link, you might find it enlightening!</br>
+</p>
+
