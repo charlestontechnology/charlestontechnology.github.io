@@ -1,5 +1,6 @@
 ---
 name: Chris O'Rourke
+github: nodesc-chris
 twitter: CLOCNO
 website: http://www.soteria.io/
 company: Soteria
