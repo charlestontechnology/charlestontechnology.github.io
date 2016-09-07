@@ -3,5 +3,5 @@
 name: VOXO
 github: voxoco
 twitter: voxollc
-website: http://www.voxo.co/
+website: http://voxo.co/
 ---
