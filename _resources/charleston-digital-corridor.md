@@ -8,6 +8,6 @@ weaknesses: Direct Questions
 image: /images/pokemon-3.png
 description: |
  This long-lived Pokéstop draws local startups into a Pokésymbiosis with promises of short-term rent commitments 
- and life-giving Synergy, battling its many enemies with a 2.7 knot beam of pure self-congratulation extracted 
- from the life force of its tenants.  It apparently also gives loans to Trainers that have pleased it.
+ and life-giving Synergy.  It battles its many enemies with a 2.7 knot beam of pure self-congratulation extracted 
+ from the life-force of its tenants.  Cooridork apparently also gives loans to Trainers that have pleased it.
 ---
