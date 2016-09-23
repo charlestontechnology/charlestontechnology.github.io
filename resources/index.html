@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+		
+		<!-- Main -->
+			<article id="main">
+
+				<header class="special container">
+			                <span class="icon fa-building-o"></span>
+											<h3>I alone cannot change the world, but I can cast a stone at my neighbor to just to make myself feel better.</h3>
+				</header>
+					
+				<!-- Two -->
+					<section class="wrapper style1 container special">
+						<div class="row">
+							{% for resource in site.resources %}
+							{% assign loopindex = forloop.index | modulo: 3 %}
+							<div class="4u person-github" data-github="{{ resource.github }}" id="resource-{{ resource.github }}">
+								<section>
+								<header>
+								<h4 class="company-name">
+									{% if resource.name.size %}
+									{{ resource.name }}
+									{% else %}
+									{{ resource.github }}
+									{% endif %}
+								</h4>
+									</header>
+								{% if resource.image %}
+								 <img src="{{resource.image}}" width="150px">
+								{% endif %}
+								<p class="resource-params">
+								{% if resource.type %}
+								<strong>Type</strong> {{resource.type}}<br/>
+								{% endif %}
+								{% if resource.abilities %}
+								<strong>Abilities</strong> {{resource.abilities}}<br/>
+								{% endif %}
+								{% if resource.weaknesses %}
+								<strong>Weaknesses</strong> {{resource.weaknesses}}
+								{% endif %}
+								</p>
+								{% if resource.description %}
+								<p class="resource-desc">
+										{{ resource.description }}
+									</p>
+								{% endif %}
+									<footer>
+										<div class="person-social">
+  											{% if resource.website %}
+  											<a title="{{ resource.website }}" href="{{ resource.website }}"><i class="fa fa-external-link-square"></i></a>
+											{% endif %}
+  											{% if resource.twitter %}
+  											<a title="{{ resource.twitter }} on Twitter" href="https://twitter.com/{{ resource.twitter }}"><i class="fa fa-twitter-square"></i></a>
+												{% endif %}
+</div>
+									</footer>
+								</section>
+							
+							</div>
+
+							  {% if loopindex == 0 %}
+								</div>
+								<div class="row">
+								{% endif %}
+							{% endfor %}
+			</div>
+						</div>
+					</section>
+			</article>
