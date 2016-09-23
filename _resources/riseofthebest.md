@@ -14,6 +14,6 @@ description: |
  daily dairy delivery from Wadmalaw Island.  The cream then gets churned 
  by hyper-local conflict-free artisans into one-of-a-kind butter to put 
  atop a steaming-hot bowl of my grits, which you can kiss after 
- you put a bird on it.</br>
+ you <a href="https://www.youtube.com/watch?v=-H_ZnC203Wo" target="new">put a bird on it</a>.</br>
  (No shrimp were harmed in the prodution of these grits.)
 ---

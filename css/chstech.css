@@ -78,6 +78,7 @@ ul > li {
 .resource-params {
   text-align: left;
   font-size: 12pt;
+  line-height: 18pt;
   padding: 1em;
 }
 
@@ -85,5 +86,5 @@ ul > li {
   text-align: justify;
   font-size: 12pt;
   padding: 1em;
-  line-height: 16pt;
+  line-height: 18pt;
 }
