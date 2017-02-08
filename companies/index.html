@@ -7,15 +7,15 @@ layout: default
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-		
+
 		<!-- Main -->
 			<article id="main">
 
 				<header class="special container">
 			                <span class="icon fa-building-o"></span>
-				        <h3>I alone cannot change the world, but I can cast a stone across the waters to create many ripples.</h3>	
+				        <h3>I alone cannot change the world, but I can cast a stone across the waters to create many ripples.</h3>
 				</header>
-					
+
 				<!-- Two -->
 					<section class="wrapper style1 container special">
 						<div class="row">
@@ -40,7 +40,7 @@ layout: default
 										<div class="person-social">
   											{% if company.website %}
   											<a title="{{ company.website }}" href="{{ company.website }}"><i class="fa fa-external-link-square"></i></a>
-											{% endif %}
+											  {% endif %}
 
   											{% if company.github %}
   											<a title="{{ company.github }} on Github" href="https://github.com/{{ company.github }}"><i class="fa fa-github-square"></i></a>
@@ -55,13 +55,12 @@ layout: default
   											{% endif %}
 
   											{% if company.linkedin %}
-  											<a title="{{ company.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ company.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
+  											<a title="{{ company.name }} on LinkedIn" href="https://www.linkedin.com/company/{{ company.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
   											{% endif %}
-
-</div>
+                    </div>
 									</footer>
 								</section>
-							
+
 							</div>
 							{% endfor %}
 						</div>
