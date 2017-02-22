@@ -15,5 +15,5 @@ collections:
     #output: true
     #permalink: /people/:path/
   companies:
-
+  resources:
   faqs:

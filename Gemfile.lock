@@ -140,6 +140,3 @@ DEPENDENCIES
   minitest
   octokit
   rake
-
-BUNDLED WITH
-   1.12.5
