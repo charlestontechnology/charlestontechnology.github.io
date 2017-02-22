@@ -73,3 +73,18 @@ ul {
 ul > li {
   margin-left: 2.4em;
 }
+
+/** Resources section **/
+.resource-params {
+  text-align: left;
+  font-size: 12pt;
+  line-height: 18pt;
+  padding: 1em;
+}
+
+.resource-desc {
+  text-align: justify;
+  font-size: 12pt;
+  padding: 1em;
+  line-height: 18pt;
+}
