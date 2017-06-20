@@ -7,19 +7,19 @@ layout: default
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-		
+
 		<!-- Main -->
 			<article id="main">
 
 				<header class="special container">
-			                <span class="icon fa-building-o"></span>
-				        <h3>I alone cannot change the world, but I can cast a stone across the waters to create many ripples.</h3>	
+					<span class="icon fa-building-o"></span>
+					<h3>I alone cannot change the world, but I can cast a stone across the waters to create many ripples.</h3>
 				</header>
-					
+
 				<!-- Two -->
 					<section class="wrapper style1 container special">
 						<div class="row">
-							{% for company in site.companies  %}
+							{% for company in site.companies %}
 							<div class="3u person-github" data-github="{{ company.github }}" id="company-{{ company.github }}">
 								<section>
 								<header>
@@ -31,37 +31,36 @@ layout: default
 									{% endif %}
 								</h4>
 									{% if company.github.size %}
-								        <img class="person-img lazy" src="/assets/blank.png" data-src="https://github.com/{{ company.github }}.png?s=200">
+									<img class="person-img lazy" src="/assets/blank.png" data-src="https://github.com/{{ company.github }}.png?s=200">
 									{% else %}
 									<img class="person-img" src="/assets/blank.png">
 									{% endif %}
 									</header>
 									<footer>
 										<div class="person-social">
-  											{% if company.website %}
-  											<a title="{{ company.website }}" href="{{ company.website }}"><i class="fa fa-external-link-square"></i></a>
+											{% if company.website %}
+											<a title="{{ company.website }}" href="{{ company.website }}"><i class="fa fa-external-link-square"></i></a>
 											{% endif %}
 
-  											{% if company.github %}
-  											<a title="{{ company.github }} on Github" href="https://github.com/{{ company.github }}"><i class="fa fa-github-square"></i></a>
-  											{% endif %}
+											{% if company.github %}
+											<a title="{{ company.github }} on Github" href="https://github.com/{{ company.github }}"><i class="fa fa-github-square"></i></a>
+											{% endif %}
 
-  											{% if company.bitbucket %}
-  											<a title="{{ company.bitbucket }} on Bitbucket" href="https://bitbucket.com/{{ company.bitbucket }}/"><i class="fa fa-bitbucket-square"></i></a>
-  											{% endif %}
+											{% if company.bitbucket %}
+											<a title="{{ company.bitbucket }} on Bitbucket" href="https://bitbucket.com/{{ company.bitbucket }}/"><i class="fa fa-bitbucket-square"></i></a>
+											{% endif %}
 
-  											{% if company.twitter %}
-  											<a title="{{ company.twitter }} on Twitter" href="https://twitter.com/{{ company.twitter }}"><i class="fa fa-twitter-square"></i></a>
-  											{% endif %}
+											{% if company.twitter %}
+											<a title="{{ company.twitter }} on Twitter" href="https://twitter.com/{{ company.twitter }}"><i class="fa fa-twitter-square"></i></a>
+											{% endif %}
 
-  											{% if company.linkedin %}
-  											<a title="{{ company.name }} on LinkedIn" href="https://www.linkedin.com/in/{{ company.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
-  											{% endif %}
-
-</div>
+											{% if company.linkedin %}
+											<a title="{{ company.name }} on LinkedIn" href="https://www.linkedin.com/company/{{ company.linkedin }}"><i class="fa fa-linkedin-square"></i></a>
+											{% endif %}
+										</div>
 									</footer>
 								</section>
-							
+
 							</div>
 							{% endfor %}
 						</div>
